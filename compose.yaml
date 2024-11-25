@@ -1,0 +1,14 @@
+services:
+  mysql:
+    image: 'mysql:latest'
+    environment:
+      - 'MYSQL_DATABASE=informula'
+      - 'MYSQL_PASSWORD=informula'
+      - 'MYSQL_ROOT_PASSWORD=informula'
+      - 'MYSQL_USER=informula'
+    ports:
+      - '3306'
+  redis:
+    image: 'redis:latest'
+    ports:
+      - '6379'
